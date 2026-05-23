@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopEasy</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>ShopEasy</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to ShopEasy</h2>
+    <p>Buy your favorite products at best prices.</p>
+
+    <button onclick="scrollToProducts()">
+      Shop Now
+    </button>
+  </section>
+
+  <section class="products" id="products">
+
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200x180?text=Shoes">
+
+        <h3>Running Shoes</h3>
+
+        <p class="price">₹999</p>
+
+        <button onclick="addToCart('Running Shoes', 999)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200x180?text=Watch">
+
+        <h3>Smart Watch</h3>
+
+        <p class="price">₹1499</p>
+
+        <button onclick="addToCart('Smart Watch', 1499)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200x180?text=Headphones">
+
+        <h3>Headphones</h3>
+
+        <p class="price">₹799</p>
+
+        <button onclick="addToCart('Headphones', 799)">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200x180?text=Bag">
+
+        <h3>Travel Bag</h3>
+
+        <p class="price">₹1299</p>
+
+        <button onclick="addToCart('Travel Bag', 1299)">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cart" id="cart">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <p class="total">
+      Total: ₹<span id="total">0</span>
+    </p>
+
+  </section>
+
+  <footer>
+    <p>© 2026 ShopEasy</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
